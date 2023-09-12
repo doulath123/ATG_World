@@ -137,9 +137,12 @@ const SignUp = () => {
                 Sign In
               </a>
             </p>
+            <div className="container bg-white d-none d-lg-block" >
             <div className="d-flex justify-content-evenly">
               <img src={loginImg} className="img-fluid" alt="" />
             </div>
+            </div>
+            
             <p style={{ fontSize: "11px" }} className="mt-5 ">
               By signing up, you agree to our Terms & conditions, Privacy policy
             </p>

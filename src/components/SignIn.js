@@ -123,9 +123,12 @@ const SignIn = () => {
                 Create new for free!
               </a>
             </p>
-            <div className="d-flex justify-content-evenly">
+            <div className="container bg-white d-none d-lg-block" >
+            <div className="d-flex  justify-content-evenly">
               <img src={loginImg} className="img-fluid" alt="" />
             </div>
+            </div>
+            
           </div>
         </div>
       </div>

@@ -1,4 +1,15 @@
 import React, { useState } from "react";
+import Forest from "./Image/forest.png"
+import Post from "./Image/Post2.png"
+import Car from "./Image/Car.png"
+import Profile_1 from "./Image/Profile1.png"
+import Profile_2 from "./Image/Profile2.png"
+import Profile_3 from "./Image/Profile3.png"
+import Profile_4 from "./Image/Profile4.png"
+import Profile_5 from "./Image/Profile5.png"
+import Profile_6 from "./Image/Profile6.png"
+import Profile_7 from "./Image/Profile7.png"
+import Profile_8 from "./Image/Profile8.png"
 import {GoTriangleDown} from "react-icons/go"
 import {MdLocationOn, MdModeEdit, MdOutlineErrorOutline,MdThumbUp} from 'react-icons/md'
 import {FaUserGroup} from "react-icons/fa6"
@@ -6,40 +17,41 @@ import {PiPencilThin} from "react-icons/pi"
 import {TbBriefcase2} from "react-icons/tb"
 import {BsFillShareFill, BsEye, BsThreeDots, BsCalendar4Event} from "react-icons/bs"
 
+
 import SignUp from "./SignUp";
 import SignIn from "./SignIn";
 const allPost = [
   {
     _id: 1,
-    postImg: "https://i.ibb.co/MnLfS47/Rectangle-5.png",
+    postImg: Forest,
     postType: "✍️ Article",
     postTitle: "What if famous brands had regular fonts? Meet RegulaBrands!",
     postMessage:
       "I’ve worked in UX for the better part of a decade. From now on, I plan to rei…",
-    postUserImg: "https://i.ibb.co/YtbCYXk/Rectangle-3.png",
+    postUserImg:Profile_4,
     postUserName: "Sarthak Kamra",
     postView: "1.4k views",
   },
   {
     _id: 2,
-    postImg: "https://i.ibb.co/pvPxVss/Rectangle-5-1.png",
+    postImg: Post,
     postType: "🔬️ Education",
     postTitle:
       "Tax Benefits for Investment under National Pension Scheme launched by Government",
     postMessage:
       "I’ve worked in UX for the better part of a decade. From now on, I plan to rei…",
-    postUserImg: "https://i.ibb.co/nCrt7bN/Rectangle-3-1.png",
+    postUserImg: Profile_1,
     postUserName: "Sarah West",
     postView: "1.4k views",
   },
   {
     _id: 3,
-    postImg: "https://i.ibb.co/M8PK98B/Rectangle5.png",
+    postImg: Car,
     postType: "🗓️ Meetup",
     postTitle: "Finance & Investment Elite Social Mixer @Lujiazui",
     postDate: "Fri, 12 Oct, 2018",
     postLocation: "Ahmedabad, India",
-    postUserImg: "https://i.ibb.co/X3kc1mQ/Rectangle-3-2.png",
+    postUserImg: Profile_2,
     postUserName: "Ronal Jones",
     postView: "1.4k views",
     button: "Visit Website",
@@ -50,7 +62,7 @@ const allPost = [
     postTitle: "Software Developer",
     postCompany: "Innovaccer Analytics Private Ltd.",
     postLocation: "Noida, India",
-    postUserImg: "https://i.ibb.co/jTNw8M5/Rectangle-3-3.png",
+    postUserImg: Profile_3,
     postUserName: "Joseph Gray",
     postView: "1.4k views",
     button: "Apply on Timesjobs",
@@ -59,22 +71,22 @@ const allPost = [
 const fakeGroupData = [
   {
     _id: 1,
-    groupImg: "https://i.ibb.co/LRNsZNc/Rectangle-6.png",
+    groupImg: Profile_7,
     groupName: "Leisure",
   },
   {
     _id: 2,
-    groupImg: "https://i.ibb.co/HHNN5kQ/Rectangle-6-2.png",
+    groupImg: Profile_8,
     groupName: "Activism",
   },
   {
     _id: 3,
-    groupImg: "https://i.ibb.co/Zh9m9Z2/Rectangle-6-3.png",
+    groupImg: Profile_6,
     groupName: "MBA",
   },
   {
     _id: 4,
-    groupImg: "https://i.ibb.co/zxjgK04/Rectangle-6-2.png",
+    groupImg: Profile_5,
     groupName: "Philosophy",
   },
 ];
@@ -232,7 +244,7 @@ const AllPost = () => {
                   aria-hidden="true"
                 >
                   <div className="modal-dialog modal-dialog-centered modal-lg">
-                    <SignUp data-bs-dismiss="modal"/>
+                    <SignUp />
                   </div>
                 </div>
                 {/* SIGN IN MODAL */}
@@ -244,7 +256,7 @@ const AllPost = () => {
                   aria-hidden="true"
                 >
                   <div className="modal-dialog modal-dialog-centered modal-lg">
-                    <SignIn data-bs-dismiss="modal"/>
+                    <SignIn />
                   </div>
                 </div>
 
