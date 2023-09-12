@@ -16,7 +16,13 @@ const SignIn = () => {
         </div>
         <button
           type="button"
-          className="btn-close rounded-circle  position-absolute"
+          className="btn-close d-lg-none"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <button
+          type="button"
+          className="btn-close rounded-circle  position-absolute bg-white d-none d-lg-block"
           style={{top:"-40px", left:"98%",opacity:"80%", backgroundColor:"rgba(255, 255, 255, 1)"}}
           data-bs-dismiss="modal"
           aria-label="Close"
